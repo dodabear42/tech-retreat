@@ -30,12 +30,12 @@
     <nav>
       <ul>
         <li>
-          <a href="faq.index.html" target="_blank">
+          <a href="faq/index.html" target="_blank">
             FAQ
           </a>
         </li>
         <li>
-          <a href="faq.index.html" target="_blank">
+          <a href="about/index.html" target="_blank">
             About
           </a>
         </li>
@@ -58,9 +58,11 @@
         <h3>Find out more</h3>
         <form>
           <!--form field for email-->
-          <input type="text" name="email" placeholder="email address"><br>
-          <!--button to send email and get itinerary-->
-          <button type="button" onclick="alert('Thanks for signing up, you can download your itinerary here')">Download Itinerary</button>
+          <input type="text" name="name" placeholder="email address"><br>
+          <!--button to send email and get itinerary,
+              Skillcrush instructions used "<input type="button">
+              but I thought using this could be better for accessibility-->
+          <button onclick="alert('Thanks for signing up, we will email you the itinerary')">Download Itinerary</button>
       </form>
       </div>
     </aside>
@@ -116,11 +118,32 @@
         hello@unplugged.com
       </address>
     </div>
-    <div class="col-2">
-      <h3>Social</h3>
-      <img />
-      <img />
-      <img />
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <div class="social">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com" target="_blank">
+              
+              </a>
+            </p>
+            <p>
+              <a href="https://www.github.com" target="_blank">
+              
+              </a>
+            </p>
+            <p>
+              <a href="https://www.twitter.com" target="_blank">
+              
+              </a>
+            </p>
+          </div>
+        </div>
+        <address class="contact">
+
+        </address>
+      </div>
     </div>
     <div id="copyright">
       <p>Copyright 2019 | Unplugged</p>
