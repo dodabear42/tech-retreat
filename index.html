@@ -24,23 +24,26 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <h1>
-      Unplugged
-    </h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="faq/index.html" target="_blank">
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a href="about/index.html" target="_blank">
-            About
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="content-wrapper">
+        <a href="#">
+          <img src="" alt="unplugged logo" />
+        </a>
+        <div class="header-divider"></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="faq/index.html" target="_blank">
+                  FAQ
+              </a>
+            </li>
+            <li>
+              <a href="about/index.html" target="_blank">
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
   </header>
   <main>
     <section>
@@ -50,11 +53,11 @@
       </h2>
     </section>
     <aside>
-      <div class="col-2">
+      <div class="content-wrapper hero-area">
         <h3>Want to join the next retreat?</h3>
         <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
       </div>
-      <div class="col-2">
+      <div class="content-wrapper">
         <h3>Find out more</h3>
         <form>
           <!--form field for email-->
@@ -63,58 +66,62 @@
               Skillcrush instructions used "<input type="button">
               but I thought using this could be better for accessibility-->
           <button onclick="alert('Thanks for signing up, we will email you the itinerary')">Download Itinerary</button>
-      </form>
+        </form>
       </div>
     </aside>
     <section class="features">
       <h1>Have the work week you always dreamed of &mdash; without the bad wifi.</h1>
-      <article>
+      <article class="features-items">
         <!-- Come back to these p tags for accessibility -->
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.
         </p>
       </article>
-      <article>
+      <article class="features-items">
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.
         </p>
       </article>
-      <article>
+      <article class="features-items">
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           Private chef team providing on demand meals &mdash; just like your team kitchen.
         </p>
       </article>
-      <article>
+      <article class="features-items">
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.
         </p>
       </article>
-      <article>
+      <article class="features-items">
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           Retreat facilitator to manage your day-to-day activities so you all get a chance to reset.
         </p>
       </article>
-      <article>
+      <article class="features-items">
         <p class="fontawesome-icon"></p>
-        <p>
+        <p class="features-item-description">
           Dedicated computer room for times that you must wifi.
         </p>
       </article>
     </section>
-    <section>
-      <h1>Be a better team in 5 days, like these.</h1>
-      <img src="../img/group.jpg" alt="group of women poses on rocky trail" />
-      <h3>LaCrue Bottling Co.<br>
-          October 2017
-      </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <section class="reviews">
+      <div class="content-wrapper">
+        <h1>Be a better team in 5 days, like these.</h1>
+        <div class="single-review">
+        <img src="../img/group.jpg" alt="group of women poses on rocky trail" />
+          <h3>LaCrue Bottling Co.<br>
+              October 2017
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
