@@ -219,7 +219,11 @@ aside {
 
 aside input, button {
     height: 50px;
-    width: 100%;
+    width: 290px;
+}
+
+aside button {
+    margin-top: 20px;
 }
 
 aside {
@@ -274,7 +278,6 @@ footer .content-wrapper,
 footer address,
 .social,
 .social h3,
-.social-icons,
 #copyright {
     align-items: center;
     display: flex;
@@ -286,19 +289,88 @@ footer .content-wrapper {
     width: 55%;
 }
 
-.copyright {
+.social-icons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 200px;
+}
+
+#copyright {
     margin-top: 50px;
+    width: 100%;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Larger screens styles
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media only screen and (min-width: 768px) {
+/* Tablet styles here */
+    aside,
+    .features,
+    .single-review,
+    footer,
+    .faq-content {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    aside .content-wrapper,
+    .features-items,
+    .single-review img,
+    .review-wrapper,
+    footer .content-wrapper,
+    .faq-items {
+        flex-basis: 250px;
+    }
+
+    .single-review,
+    .mission-content p {
+        width: 300px;
+        display: flex;
+    }
+
+    .features-items
+    {
+        flex-basis: 200px;
+    }
+
+
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+
+
+    .faq-content {
+        flex-basis: 40%;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
+
+    
+
+    
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+/* desktop styles here */
+
+
 }
 
 
 
 
 
-
-
-
-
- /* ==========================================================================
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
