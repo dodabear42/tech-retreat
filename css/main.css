@@ -181,6 +181,7 @@ header nav ul li {
 
 section .hero-area {
     display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -191,6 +192,7 @@ section .hero-area {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 aside {
     display: flex;
+    flex-flow: row wrap;
 }
 
 /*#########################################################################
@@ -198,10 +200,12 @@ aside {
 #########################################################################*/
 section .features {
     display: flex;
+    flex-flow: row wrap;
 }
 
 section .features-items {
     display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -211,6 +215,7 @@ section .features-items {
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 section .reviews {
     display: flex;
+    flex-flow: row wrap;
 }
 
 /* ABOUT PAGE ======================================================================
@@ -219,16 +224,27 @@ section .reviews {
 
 section .mission {
     display: flex;
+    flex-flow: row wrap;
 }
 
 section .contact-section {
-    
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /* FAQ PAGE =======================================================================
         faq Styles
 ==================================================================================*/
 
+section .faq-section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section .faq-section .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 /*=========================================================================
     Footer Styles
