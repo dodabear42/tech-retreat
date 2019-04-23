@@ -120,7 +120,7 @@ header,
 footer {
     align-items: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     height: auto;
     justify-content: center;
     padding-top: 10px;
@@ -150,16 +150,16 @@ header nav {
 header nav,
 header nav ul,
 header nav ul li {
-    align-items: stretch;
+    align-items: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
 header .content-wrapper {
     align-items: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     justify-content: center;
     line-height: 2em;
     width: 100%;
@@ -184,7 +184,7 @@ section,
 aside {
     align-items: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     height: auto;
     justify-content: center;
     width: 100%;
@@ -281,7 +281,7 @@ footer address,
 #copyright {
     align-items: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
