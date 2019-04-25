@@ -96,14 +96,14 @@ textarea {
 }
 
 
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 /* General Styles */
  
 html {
+    background-color: #202322;
+    color: #e2e3ed;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     width: 100%;
@@ -154,7 +154,11 @@ address {
     line-height: 24px;
 }
  
-
+.content-wrapper,
+h1,
+h2 {
+    padding: 0 5%;
+}
    /* ---------------- Base Header - Footer Styles -------------------------- */
 header,
 footer,
@@ -163,11 +167,14 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 90%;
-    margin: 0 20px;
+    flex-basis: 100%;
+    margin: 0;
 }
 
    /* Header styles */
+header {
+    background-color: #202322;
+}
 
 header .content-wrapper {
     align-items: center;
@@ -234,6 +241,7 @@ header nav ul li {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 aside {
     align-items: center;
+    background-color: #527158;
     display: flex;
     flex-basis: 100%;
     flex-flow: row wrap;
@@ -274,7 +282,13 @@ aside input::placeholder {
 }
 
 aside button {
+    background-color: #2a423a;
+    border: none;
+    color: #e2e3ed;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
     margin-bottom: 50px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -314,6 +328,7 @@ section .features-items:last-of-type {
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .reviews  {
     align-items: center;
+    background-color: #2a423a;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -422,6 +437,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 /*=========================================================================
     Footer Styles
 =============================================================================*/
+footer {
+    background-color: #202322;
+}
 footer .content-wrapper {
     align-items: center;
     display: flex;
@@ -503,12 +521,13 @@ footer .social-icons {
     Aside
    ----------*/
    aside {
-       height: 240px;
+       
+       height: auto;
        justify-content: space-between;
    }
 
    aside .content-wrapper {
-       flex-basis: 290px;
+       flex-basis: 260px;
 
    }
 
@@ -516,14 +535,7 @@ footer .social-icons {
        color: #2a423a;
    }
 
-   aside button {
-       background-color: #2a423a;
-       font-family: 'Poppins', Helvetica, Arial, sans-serif;
-       font-weight: 500;
-       color: #e2e3ed;
-       border: none;
-       text-align: center;
-   }
+   
 
    aside input,
    aside button {
