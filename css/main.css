@@ -245,6 +245,7 @@ aside button {
     justify-content: center;
 }
 
+
 .features h1 {
     margin-top: 50px;
 }
@@ -302,7 +303,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         Mission Styles
 ==================================================================================*/
 
-.mission {
+.mission,
+.mission .mission-content,
+.mission .mission-content p {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -361,6 +364,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .faq-section h1 {
     padding: 50px 0;
+    width: 100%;
 }
 
 .faq-section h3 {
@@ -451,9 +455,66 @@ footer .social-icons {
        padding-top: 65px;
    }
 
+   /* --------
+    Aside
+   ----------*/
+   aside {
+       height: 240px;
+       justify-content: space-between;
+   }
+
+   aside .content-wrapper {
+       flex-basis: 290px;
+       height: 150px;
+   }
+
+   aside button {
+       padding-bottom: 0;
+   }
+
+   aside input,
+   aside button {
+       height: 53px;
+   }
+
+    
+
+   /* --------
+    Features
+   ----------*/
+
+   section .features-items {
+       flex-basis: 200px;
+       height: 150px;
+       padding: 10px;
+   }
+
+   section .features-items:last-of-type {
+       padding-bottom: 0;
+   }
+
+   /* --------
+    Reviews
+   ----------*/
+
+   section .review-wrapper {
+       flex-basis: 320px;
+   }
+
    /* ======
    ABOUT
    ========*/
+   .mission .mission-content {
+        justify-content: space-between;
+        flex-basis: 100%;
+   }
+
+   .mission .mission-content p {
+       width: 300px;
+   }
+
+   
+
    .contact-section .contact-items {
         flex-basis: 40%;
         flex-grow: 1;
@@ -466,6 +527,25 @@ footer .social-icons {
 
    .contact-section .contact-items:first-of-type {
        margin-right: 13%;
+   }
+
+   /* ========
+    FAQs
+   ==========*/
+
+
+   .faq-section {
+       flex-basis: 100%;
+   }
+
+   .faq-section .content-wrapper {
+        justify-content: space-between;
+        width: 100%;
+   }
+
+   
+   section .faq-items {
+       width: 300px;
    }
 
 
