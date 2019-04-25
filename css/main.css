@@ -309,16 +309,27 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     justify-content: center;
 }
 
+.contact-section {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .contact-section h3 {
     padding: 15px 0;
     width: 100%;
 }
 
-.contact-section {
-    align-items: center;
+.contact-items {
     display: flex;
+    flex-basis: 100%;
     flex-flow: row wrap;
-    justify-content: center;
+}
+
+.contact-section h4 {
+    width: 100%;
 }
 
 .mission .content-wrapper,
@@ -443,8 +454,18 @@ footer .social-icons {
    /* ======
    ABOUT
    ========*/
+   .contact-section .contact-items {
+        flex-basis: 40%;
+        flex-grow: 1;
+        height: 85px;
+   }
+
+   .contact-section .content-wrapper {
+       justify-content: space-between;
+   }
+
    .contact-section .contact-items:first-of-type {
-       margin-right: 100px;
+       margin-right: 13%;
    }
 
 
