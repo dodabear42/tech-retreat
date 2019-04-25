@@ -509,16 +509,25 @@ footer .social-icons {
 
    aside .content-wrapper {
        flex-basis: 290px;
-       height: 150px;
+
+   }
+
+   input[type=text] {
+       color: #2a423a;
    }
 
    aside button {
-       padding-bottom: 0;
+       background-color: #2a423a;
+       font-family: 'Poppins', Helvetica, Arial, sans-serif;
+       font-weight: 500;
+       color: #e2e3ed;
+       border: none;
+       text-align: center;
    }
 
    aside input,
    aside button {
-       height: 53px;
+       height: 50px;
    }
 
     
@@ -527,13 +536,13 @@ footer .social-icons {
     Features
    ----------*/
 
-   section .features-items {
+   .features .features-items {
        flex-basis: 200px;
        height: 150px;
        padding: 10px;
    }
 
-   section .features-items:last-of-type {
+   .features .features-items:last-of-type {
        padding-bottom: 0;
    }
 
