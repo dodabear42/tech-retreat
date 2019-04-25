@@ -302,43 +302,61 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         Mission Styles
 ==================================================================================*/
 
-section .mission {
+.mission {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-section .contact-section {
+.contact-section h3 {
+    padding: 15px 0;
+}
+
+.contact-section {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-section .content-wrapper {
+.mission .content-wrapper,
+.contact-section .content-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    padding: 50px 0;
 }
 
 /* FAQ PAGE =======================================================================
         faq Styles
 ==================================================================================*/
 
-section .faq-section {
+.faq-section {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-section .faq-section .content-wrapper {
+.faq-section .content-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.faq-section h1 {
+    padding: 50px 0;
+}
+
+.faq-section h3 {
+    padding-bottom: 15px;
+}
+
+.faq-section .faq-items {
+    padding-bottom: 50px;
 }
 
 /*=========================================================================
