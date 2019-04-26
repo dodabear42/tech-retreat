@@ -145,7 +145,7 @@ h3 {
 p {
     font-size: .875em;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18px;
 }
  
 img {
@@ -188,7 +188,9 @@ header .content-wrapper {
 }
 
 header .logo {
+    align-items: center;
     display: flex;
+    justify-content: flex-start;
     padding: 45px 0 45px 0;
 }
 
@@ -346,9 +348,9 @@ aside button {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
+    height: 162px;
     justify-content: center;
     max-width: 350px;
-    padding-top: 60px;
     width: 56%;
 }
 
@@ -610,6 +612,10 @@ footer .social-icons {
        width: 100%;
    }
 
+   header {
+       height: 90px;
+   }
+
    header figure {
        width: 30%;
    }
@@ -624,22 +630,31 @@ footer .social-icons {
    }
    
    header .content-wrapper {
-       justify-content: flex-start;
-        width: 80%;
+       justify-content: space-between;
    }
 
    header .header-divider {
        flex-grow: 1;
    }
 
+   header .logo {
+       height: 100%;
+       padding: 0;
+   }
+
    header nav {
        flex-basis: 130px;
+       margin: 0;
+       height: 100%;
+       padding: 0;
    }
 
-   header ul li {
-        width: 50px;
+   header ul li {  
+    width: 50px;
    }
-
+   * {
+       border: 1px dotted magenta;
+   }
    /*--------
     Hero
    ----------*/
@@ -700,7 +715,6 @@ footer .social-icons {
        padding: 10px;
        margin: 0 20px;
     }
-   
 
    .features .features-items:last-of-type {
        padding-bottom: 0;
