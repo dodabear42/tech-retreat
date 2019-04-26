@@ -568,7 +568,9 @@ footer .social-icons {
     width: 40px;
 }
 
+
 .social-icons i {
+    font-size: 1.125em;
     padding-top: 10px;
 }
 
