@@ -412,8 +412,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 
 .mission .content-wrapper,
-.contact-section .content-wrapper,
-.map {
+.contact-section .content-wrapper {
     width: 90%;
 }
 
@@ -427,6 +426,22 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.map figure {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 80%;
+    position: relative;
+    width: 100%;
+}
+
+.map iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .contact-section {
@@ -693,20 +708,10 @@ footer .social-icons {
     width: 80%;
    }
 
-   .map figure {
-       height: 0;
-       overflow: hidden;
-       padding-bottom: 80%;
-       position: relative;
-       width: 100%;
-   }
-
+   .map,
+   .map figure,
    .map iframe {
-       height: 100%;
-       left: 0;
-       position: absolute;
-       top: 0;
-       width: 100%;
+       height: 350px;
    }
 
    .contact-section .contact-items {
@@ -782,6 +787,12 @@ footer .social-icons {
     .reviews figure {
         margin-right: 3%;
         width: 38%;
+    }
+
+    .map,
+    .map figure,
+    .map iframe {
+        height: 450px;
     }
 }
 
