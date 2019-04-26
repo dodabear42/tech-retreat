@@ -407,11 +407,19 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         Mission Styles
 ==================================================================================*/
 .mission,
-.contact-section,
+.contact-section {
+    width: 100%;
+}
+
+.mission .content-wrapper,
+.contact-section .content-wrapper,
 .map {
     width: 90%;
 }
 
+.mission {
+    background-color: #527158;
+}
 .mission,
 .mission .mission-content,
 .mission .mission-content p {
@@ -423,10 +431,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .contact-section {
     align-items: center;
+    background-color: #2a423a;
     display: flex;
-    flex-basis: 100%;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .contact-section h3 {
@@ -469,6 +477,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 90%;
 }
 
 .faq-section h2 {
@@ -678,12 +687,13 @@ footer .social-icons {
        padding-right: 5%;
    }
 
-   .mission,
-   .map,
-   .contact-section {
+   .mission .content-wrapper,
+   .contact-section .content-wrapper {
     max-width: 1000px;
     width: 80%;
    }
+
+
 
    .contact-section .contact-items {
         flex-basis: 40%;
@@ -706,17 +716,19 @@ footer .social-icons {
 
 
    .faq-section {
+       background-color: #527158;
        flex-basis: 100%;
    }
 
    .faq-section .content-wrapper {
         justify-content: space-between;
-        width: 100%;
+        max-width: 1000px;
+        width: 80%;
    }
 
    
    section .faq-items {
-       width: 300px;
+       width: 45%;
    }
 
    /* --------
