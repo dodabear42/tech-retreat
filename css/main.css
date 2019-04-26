@@ -135,8 +135,15 @@ h2 {
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.875em;
     font-weight: 500;
+}
+
+h3 {
+    font-size: 1.875em;
+}
+
+h4 {
+    font-size: 1.5em;
 }
  
 p {
@@ -363,7 +370,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-
+    width: 100%;
 }
 
 .reviews h2 {
@@ -374,21 +381,27 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
     width: 90%;
 }
 
-.reviews img {
+.reviews article {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 
 }
 
-.reviews h3 {
+.reviews figure {
+    width: 100%;
+}
+
+.reviews h4 {
     padding: 20px 0;
 }
 
-.reviews p {
-    padding-bottom: 50px;
-}
 
 /* ABOUT PAGE ======================================================================
         Mission Styles
@@ -475,9 +488,13 @@ footer {
 footer .content-wrapper {
     align-items: center;
     display: flex;
-    flex-basis: 60%;
+    flex-basis: 90%;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+footer article {
+    width: 60%;
 }
 
 footer h3:first-of-type {
@@ -531,6 +548,11 @@ footer .social-icons {
        width: 100%;
    }
 
+   header figure {
+       width: 30%;
+   }
+
+    header .content-wrapper,
    .hero-area h1,
    aside .content-wrapper,
    .features .content-wrapper,
@@ -555,7 +577,9 @@ footer .social-icons {
    /*--------
     Hero
    ----------*/
-    
+   .hero-area {
+        height: 600px;
+    }
    .hero-area h1 {
        padding: 65px;
    }
@@ -614,9 +638,23 @@ footer .social-icons {
    /* --------
     Reviews
    ----------*/
+  
+   .reviews .review-wrapper {
+    
+        margin: 0;
+       padding: 0;
+       width: 46%;
+   }
 
-   section .review-wrapper {
-       flex-basis: 320px;
+   .reviews figure {  
+    margin-right: 2%;
+    width: 46%;
+   }
+
+   .reviews h4 {
+       margin: 0;
+       padding: 0;
+       
    }
 
    /* ======
@@ -673,9 +711,20 @@ footer .social-icons {
        align-items: flex-start;
        justify-content: space-around;
    }
+
    footer .content-wrapper {
-       flex-basis: 40%;
+       justify-content: space-around;
+       max-width: 1000px;
+       width: 80%;
    }
+
+   footer article {
+       flex-basis: 40%;
+       height: 300px;
+ 
+   }
+
+   
 
 }
 
@@ -683,8 +732,18 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
     
+    
+
+    header figure {
+        width: 25%;
+    } 
+    
+    .reviews figure {
+        margin-right: 3%;
+        width: 38%;
+    }
 }
-s
+
 
 
 /* ==========================================================================
