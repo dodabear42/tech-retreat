@@ -406,6 +406,11 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 /* ABOUT PAGE ======================================================================
         Mission Styles
 ==================================================================================*/
+.mission,
+.contact-section,
+.map {
+    width: 90%;
+}
 
 .mission,
 .mission .mission-content,
@@ -666,10 +671,19 @@ footer .social-icons {
    }
 
    .mission .mission-content p {
-       width: 300px;
+        width: 46%;
    }
 
-   
+   .mission .mission-content p:first-of-type {
+       padding-right: 5%;
+   }
+
+   .mission,
+   .map,
+   .contact-section {
+    max-width: 1000px;
+    width: 80%;
+   }
 
    .contact-section .contact-items {
         flex-basis: 40%;
@@ -679,6 +693,7 @@ footer .social-icons {
 
    .contact-section .content-wrapper {
        justify-content: space-between;
+    
    }
 
    .contact-section .contact-items:first-of-type {
