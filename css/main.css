@@ -122,22 +122,26 @@ ol {
 a {
     color: #e2e3ed;
     font-size: 1.125em;
+    font-weight: 700;
     text-decoration: none;
 }
  
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
+    font-weight: 500;
 }
  
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
 }
  
 p {
     font-size: 1.125em;
+    font-weight: 400;
     line-height: 24px;
 }
  
@@ -151,6 +155,7 @@ figure {
  
 address {
     font-size: 1.125em;
+    font-weight: 500;
     line-height: 24px;
 }
  
@@ -232,13 +237,15 @@ header nav ul li {
     flex-basis: 100%;
     flex-flow: row wrap;
     height: 500px;
-    justify-content: flex-start;
-    z-index: 1;
+    justify-content: center;
+
 }
 
 .hero-area h1 {
     font-size: 3.75em;
+    font-weight: 500;
     padding-top: 50px;
+    margin: 0 5%;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -248,22 +255,30 @@ aside {
     align-items: center;
     background-color: #527158;
     display: flex;
-    flex-basis: 100%;
+    width: 100%;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 aside .content-wrapper {
     align-items: center;
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 90%;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: 25px 0 50px 0;
+}
+
+aside .column-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 
 aside h3 {
-    margin-top: 25px;
     width: 100%;
 }
 
@@ -292,7 +307,6 @@ aside button {
     color: #e2e3ed;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
-    margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -308,23 +322,33 @@ aside button {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
 }
 
-
-.features h2 {
-    padding-top: 50px;
-}
-
-section .features-items {
+.features .content-wrapper {
     align-items: center;
     display: flex;
-    flex-basis: 56%;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.features h2 {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.features .features-items {
+    align-items: center;
+    display: flex;
+    width: 56%;
     flex-flow: row wrap;
     justify-content: center;
     padding-top: 60px;
 }
 
-section .features-items:last-of-type {
+.features .features-items:last-of-type {
     padding-bottom: 65px;
 }
 
@@ -351,6 +375,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 90%;
 }
 
 .reviews img {
@@ -503,13 +528,20 @@ footer .social-icons {
    header,
    footer,
    main {
-       width: 80%;
-       padding-left: 65px;
+       width: 100%;
    }
 
+   .hero-area h1,
+   aside .content-wrapper,
+   .features .content-wrapper,
+   .reviews .content-wrapper {
+        max-width: 1000px;
+        width: 80%;
+   }
+   
    header .content-wrapper {
        justify-content: flex-start;
-        width: 100%;
+        width: 80%;
    }
 
    header .header-divider {
@@ -519,26 +551,39 @@ footer .social-icons {
    header nav {
        flex-basis: 130px;
    }
+
+   /*--------
+    Hero
+   ----------*/
     
    .hero-area h1 {
-       padding-top: 65px;
+       padding: 65px;
    }
 
    /* --------
     Aside
    ----------*/
    aside {
-       
        height: auto;
-       justify-content: space-between;
+    }
+
+   aside h3 {
+       margin: 0 0 15px 0;
    }
 
    aside .content-wrapper {
-       flex-basis: 260px;
-
+        align-items: flex-start;
+        justify-content: space-around;
    }
 
-   input[type=text] {
+   aside .column-wrapper {
+       height: auto;
+       max-width: 350px;
+        width: 40%;
+   }
+
+
+   aside input[type=text] {
        color: #2a423a;
    }
 
@@ -549,12 +594,13 @@ footer .social-icons {
        height: 50px;
    }
 
-    
-
-   /* --------
+      /* --------
     Features
    ----------*/
-
+   .features .content-wrapper {
+       max-width: 1000px;
+       width: 80%;
+   }
    .features .features-items {
        flex-basis: 200px;
        height: 150px;
@@ -638,12 +684,7 @@ footer .social-icons {
 /* desktop styles here */
     
 }
-
-
-* {
-    border: 1px dotted pink;
-}
-
+s
 
 
 /* ==========================================================================
