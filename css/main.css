@@ -121,14 +121,14 @@ ol {
  
 a {
     color: #e2e3ed;
-    font-size: 1.125em;
+    font-size: .875em;
     font-weight: 700;
     text-decoration: none;
 }
  
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.875em;
     font-weight: 500;
 }
  
@@ -139,15 +139,11 @@ h4 {
 }
 
 h3 {
-    font-size: 1.875em;
-}
-
-h4 {
-    font-size: 1.5em;
+    font-size: 1.125em;
 }
  
 p {
-    font-size: 1.125em;
+    font-size: .875em;
     font-weight: 400;
     line-height: 24px;
 }
@@ -161,7 +157,7 @@ figure {
 }
  
 address {
-    font-size: 1.125em;
+    font-size: .875em;
     font-weight: 500;
     line-height: 24px;
 }
@@ -262,9 +258,9 @@ aside {
     align-items: center;
     background-color: #527158;
     display: flex;
-    width: 100%;
     flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
 }
 
 aside .content-wrapper {
@@ -428,6 +424,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     justify-content: center;
 }
 
+
 .map figure {
     height: 0;
     overflow: hidden;
@@ -449,11 +446,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     background-color: #2a423a;
     display: flex;
     flex-flow: row wrap;
+    height: 340px;
     justify-content: center;  
 }
 
-.contact-section h3 {
-    padding: 15px 0;
+.contact-section h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
     width: 100%;
 }
 
@@ -465,6 +464,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .contact-section h4 {
     width: 100%;
+    margin: 0;
+    padding: 7px 0;
+
 }
 
 .mission .content-wrapper,
@@ -473,7 +475,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    padding: 50px 0;
+    margin: 50px 0;
 }
 
 /* FAQ PAGE =======================================================================
@@ -571,6 +573,16 @@ footer .social-icons {
 
 @media only screen and (min-width: 768px) {
 /* Tablet styles here */
+    a {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 2.25em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
    header,
    footer,
    main {
@@ -714,6 +726,9 @@ footer .social-icons {
        height: 350px;
    }
 
+    .contact-section {
+        height: 410px;
+    }
    .contact-section .contact-items {
         flex-basis: 40%;
         flex-grow: 1;
@@ -755,6 +770,7 @@ footer .social-icons {
    ----------*/
    footer {
        align-items: flex-start;
+       height: 350px;
        justify-content: space-around;
    }
 
@@ -766,7 +782,7 @@ footer .social-icons {
 
    footer article {
        flex-basis: 40%;
-       height: 300px;
+       height: 200px;
  
    }
 
@@ -778,7 +794,9 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
     
-    
+    h3 {
+        font-size: 1.875em;
+    }
 
     header figure {
         width: 25%;
