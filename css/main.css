@@ -142,11 +142,11 @@ p {
 }
  
 img {
- 
+    width: 100%;
 }
  
 figure {
- 
+    margin: 0;
 }
  
 address {
@@ -182,6 +182,14 @@ header .content-wrapper {
 header .logo {
     display: flex;
     padding: 45px 0 45px 0;
+}
+
+header figure {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
 }
 
 header nav {
