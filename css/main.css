@@ -245,7 +245,7 @@ header nav ul li {
 }
 
 .hero-area h1 {
-    font-size: 3.75em;
+    font-size: 2.25em;
     font-weight: 500;
     padding-top: 50px;
     margin: 0 5%;
@@ -615,6 +615,10 @@ footer .social-icons {
        flex-basis: 130px;
    }
 
+   header ul li {
+        width: 50px;
+   }
+
    /*--------
     Hero
    ----------*/
@@ -622,6 +626,7 @@ footer .social-icons {
         height: 600px;
     }
    .hero-area h1 {
+       font-size: 3em;
        padding: 65px;
    }
 
@@ -794,6 +799,10 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
     
+    .hero-area h1 {
+        font-size: 3.75em;
+    }
+
     h3 {
         font-size: 1.875em;
     }
