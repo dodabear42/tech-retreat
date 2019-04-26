@@ -693,7 +693,21 @@ footer .social-icons {
     width: 80%;
    }
 
+   .map figure {
+       height: 0;
+       overflow: hidden;
+       padding-bottom: 80%;
+       position: relative;
+       width: 100%;
+   }
 
+   .map iframe {
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+   }
 
    .contact-section .contact-items {
         flex-basis: 40%;
