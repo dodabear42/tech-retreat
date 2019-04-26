@@ -559,7 +559,17 @@ footer .social-icons {
 }
 
 .social-icons p {
-    padding: 20px;
+    margin: 20px;
+    background-color: #527158;
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.social-icons i {
+    padding-top: 10px;
 }
 
 #copyright {
