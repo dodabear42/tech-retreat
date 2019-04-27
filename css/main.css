@@ -622,10 +622,6 @@ footer .social-icons {
        height: 90px;
    }
 
-   header figure {
-       width: 30%;
-   }
-
     header .content-wrapper,
    .hero-area h1,
    aside .content-wrapper,
@@ -636,7 +632,7 @@ footer .social-icons {
    }
    
    header .content-wrapper {
-       justify-content: space-between;
+       justify-content: flex-start;
    }
 
    header .header-divider {
@@ -666,6 +662,7 @@ footer .social-icons {
    .hero-area {
         height: 600px;
     }
+    
    .hero-area h1 {
        font-size: 3em;
        padding: 65px;
