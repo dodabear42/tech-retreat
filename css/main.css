@@ -769,6 +769,7 @@ footer .social-icons {
 
     .contact-section {
         height: 410px;
+        flex-basis: 100%;
     }
    .contact-section .contact-items {
         flex-basis: 40%;
