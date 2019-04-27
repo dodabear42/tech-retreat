@@ -844,11 +844,6 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
      header figure {
-        width: 25%;
-    } 
-
-    header figure {
-        min-width: 276px;
         width: 30%;
     } 
 
