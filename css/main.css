@@ -344,6 +344,10 @@ aside button {
     width: 100%;
 }
 
+.features p {
+    margin: 0;
+}
+
 .features .features-items {
     align-items: center;
     display: flex;
@@ -381,11 +385,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     width: 100%;
 }
 
+
 .reviews .content-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
     width: 90%;
 }
@@ -394,7 +399,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -578,7 +583,7 @@ footer .social-icons {
 
 .social-icons i {
     font-size: 1.125em;
-    padding-top: 10px;
+    padding: 12px 0 0 0;
 }
 
 #copyright {
@@ -652,9 +657,7 @@ footer .social-icons {
    header ul li {  
     width: 50px;
    }
-   * {
-       border: 1px dotted magenta;
-   }
+   
    /*--------
     Hero
    ----------*/
