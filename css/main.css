@@ -188,37 +188,36 @@ header figure {
     justify-content: center;
 }
 
-header .logo {
+header .logo,
+header nav {
     align-items: center;
     display: flex;
+}
+
+header .logo {
     justify-content: center;
     padding: 45px 0 45px 0;
     width: 66%;
 }
 
 header figure {
-    width: 60%;
+    width: 100%;
 }
 
 header nav {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
     flex-basis: 100%;
+    flex-flow: row wrap;
     padding: 20px 0;
 }
-
-
 
 header nav ul {
     display: flex;
     flex-basis: 100%;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
 }
 
+header nav ul,
 header nav ul li {
     margin: 0;
     padding: 0;
@@ -254,44 +253,41 @@ header nav ul li {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Sign up Area Styles
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-aside {
+aside,
+aside .content-wrapper,
+aside .column-wrapper {
     align-items: center;
-    background-color: #527158;
     display: flex;
     flex-flow: row wrap;
+}
+
+aside {
+    background-color: #527158;
     justify-content: space-around;
-    width: 100%;
 }
 
 aside .content-wrapper {
-    align-items: center;
-    display: flex;
     flex-basis: 90%;
-    flex-flow: row wrap;
     justify-content: center;
     margin: 25px 0 50px 0;
 }
 
 aside .column-wrapper {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
+}
+
+aside,
+aside .column-wrapper,
+aside h3,
+aside form,
+aside button,
+aside input {
     width: 100%;
 }
 
-
-aside h3 {
-    width: 100%;
-}
-
-aside form {
-    width: 100%;
-}
 
 aside input,
 aside button {
-    width: 100%;
     height: 50px;
 }
 
@@ -318,21 +314,22 @@ aside button {
 /*#########################################################################
     Features Styles
 #########################################################################*/
-.features {
+.features,
+.features .content-wrapper,
+.features .features-items {
     align-items: center;
-    background: url('../img/features-image.jpg') no-repeat center #333;
-    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.features {
+    background: url('../img/features-image.jpg') no-repeat center #333;
+    background-size: cover;
     width: 100%;
 }
 
 .features .content-wrapper {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     margin-bottom: 50px;
     width: 90%;
 }
@@ -347,11 +344,7 @@ aside button {
 }
 
 .features .features-items {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
     height: 162px;
-    justify-content: center;
     max-width: 350px;
     width: 56%;
 }
@@ -369,25 +362,33 @@ aside button {
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     Reviews Styles
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.reviews,
+.reviews .content-wrapper,
+.reviews article {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.reviews,
+.reviews h2,
+.reviews article,
+.review-wrapper {
+    width: 100%;
+}
+
 .reviews  {
     align-items: center;
     background-color: #2a423a;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    width: 100%;
+
 }
 
 .reviews h2 {
     padding: 50px 0 30px 0;
-    width: 100%;
 }
-
 
 .reviews .content-wrapper {
     align-items: center;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
     margin-bottom: 50px;
     width: 90%;
@@ -395,20 +396,11 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .reviews article {
     align-items: flex-start;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    width: 100%;
 }
-
-
 
 .reviews h4 {
     padding: 20px 0;
-}
-
-.review-wrapper {
-    width: 100%;
 }
 
 
@@ -416,28 +408,40 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         Mission Styles
 ==================================================================================*/
 .mission,
-.contact-section {
+.mission .contact-section,
+.mission .mission-content,
+.mission .mission-content p {
     width: 100%;
 }
 
 .mission .content-wrapper,
+.contact-section .content-wrapper,
+.mission,
+.mission .mission-content,
+.mission .mission-content p,
+.contact-section {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mission .content-wrapper,
 .contact-section .content-wrapper {
+    justify-content: flex-start;
+    margin: 50px 0;
     width: 90%;
 }
 
 .mission {
     background-color: #527158;
 }
+
 .mission,
 .mission .mission-content,
 .mission .mission-content p {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    width: 100%;
-}
 
+}
 
 .map figure {
     height: 0;
@@ -456,10 +460,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 
 .contact-section {
-    align-items: center;
     background-color: #2a423a;
-    display: flex;
-    flex-flow: row wrap;
     height: 340px;
     justify-content: center;  
 }
@@ -483,31 +484,22 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 }
 
-.mission .content-wrapper,
-.contact-section .content-wrapper {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    margin: 50px 0;
-}
-
 /* FAQ PAGE =======================================================================
         faq Styles
 ==================================================================================*/
-
-.faq-section {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
+.faq-section,
 .faq-section .content-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.faq-section {
+    background-color: #527158;
+}
+
+.faq-section .content-wrapper {
     width: 90%;
 }
 
@@ -797,7 +789,7 @@ footer .social-icons {
 
 
    .faq-section {
-       background-color: #527158;
+       
        flex-basis: 100%;
    }
 
