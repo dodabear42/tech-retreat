@@ -159,7 +159,7 @@ figure {
 address {
     font-size: .875em;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.0;
 }
  
 
@@ -380,6 +380,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 .reviews  {
     align-items: center;
     background-color: #2a423a;
+    height: auto;
     justify-content: center;
 
 }
@@ -403,7 +404,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 .reviews h4 {
     padding: 20px 0;
 }
-
 
 /* ABOUT PAGE ======================================================================
         Mission Styles
