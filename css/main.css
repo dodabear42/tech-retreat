@@ -843,13 +843,8 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
      header figure {
-        width: 25%;
-    } 
-
-    header .logo {
-        min-width: 276px;
         width: 30%;
-    }
+    } 
 
     .hero-area h1 {
         font-size: 3.75em;
@@ -858,10 +853,7 @@ footer .social-icons {
     h3 {
         font-size: 1.875em;
     }
-
-   
-    
-    
+     
     .reviews figure {
         margin-right: 3%;
         width: 38%;
