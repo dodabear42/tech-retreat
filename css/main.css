@@ -180,7 +180,8 @@ header {
     background-color: #202322;
 }
 
-header .content-wrapper {
+header .content-wrapper,
+header figure {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -196,10 +197,6 @@ header .logo {
 }
 
 header figure {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     width: 60%;
 }
 
