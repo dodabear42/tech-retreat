@@ -190,8 +190,9 @@ header .content-wrapper {
 header .logo {
     align-items: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 45px 0 45px 0;
+    width: 66%;
 }
 
 header figure {
@@ -645,6 +646,7 @@ footer .social-icons {
    header .logo {
        height: 100%;
        padding: 0;
+       width: 35%;
    }
 
    header nav {
@@ -840,7 +842,15 @@ footer .social-icons {
 
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
-    
+     header figure {
+        width: 25%;
+    } 
+
+    header .logo {
+        min-width: 276px;
+        width: 30%;
+    }
+
     .hero-area h1 {
         font-size: 3.75em;
     }
@@ -849,10 +859,7 @@ footer .social-icons {
         font-size: 1.875em;
     }
 
-    header figure {
-        width: 25%;
-    } 
-
+   
     
     
     .reviews figure {
