@@ -622,10 +622,6 @@ footer .social-icons {
        height: 90px;
    }
 
-   header figure {
-       width: 30%;
-   }
-
     header .content-wrapper,
    .hero-area h1,
    aside .content-wrapper,
@@ -636,7 +632,7 @@ footer .social-icons {
    }
    
    header .content-wrapper {
-       justify-content: space-between;
+       justify-content: flex-start;
    }
 
    header .header-divider {
@@ -645,7 +641,11 @@ footer .social-icons {
 
    header .logo {
        height: 100%;
+       justify-content: flex-start;
        padding: 0;
+   }
+
+   header figure {
        width: 35%;
    }
 
@@ -666,6 +666,7 @@ footer .social-icons {
    .hero-area {
         height: 600px;
     }
+
    .hero-area h1 {
        font-size: 3em;
        padding: 65px;
@@ -843,6 +844,11 @@ footer .social-icons {
 @media only screen and (min-width: 1200px) {
 /* desktop styles here */
      header figure {
+        width: 25%;
+    } 
+
+    header figure {
+        min-width: 276px;
         width: 30%;
     } 
 
